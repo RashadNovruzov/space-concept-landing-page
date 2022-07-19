@@ -32,3 +32,159 @@ body{
 }
 
 /*=========================== Blocks' styles ====================== */
+
+
+.header{
+	min-height: 830px;
+	background-image: url("../img/earth-1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header__container{
+	height: 100vh;
+}
+
+.header__top{
+	height: 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo img{
+	width: 100%;
+}
+.header__logo{
+	flex: 0 1 170px;
+}
+
+
+.header__button{
+	display: flex;
+	align-items: center;
+}
+.header__button:after{
+	font-family: 'icomoon';
+	content: "\f095";
+	margin-left: 5px;
+}
+.header__menu{
+	flex: 0 1 633px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-menu__item{
+	font-size: 29px;
+	line-height: 44px;
+	color: #FFFFFF;
+	transition: 0.2s all;
+}
+
+.header-menu__item:hover{
+	color: #0ab1fc;
+}
+
+.header__content{	
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__left{
+	max-width: 660px;
+}
+.section-title{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 55px;
+	letter-spacing: -0.02em;
+	color: #0AB1FC;
+}
+
+.header__title{
+	margin-bottom: 35px;
+}
+.text{
+	font-size: 33px;
+	line-height: 44px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.button{
+	padding: 9px 26px;
+	height: 67px;
+    font-size: 20px;
+    line-height: 20px;
+	color: #FFFFFF;
+	border-radius: 50px;
+	outline: none;
+	background: #0AB1FC;
+}
+
+.burger{
+	margin-left: 20px;
+	padding-right: 13px;
+	display: none;
+}
+.burger__line{
+	display: block;
+	width: 45px;
+	height: 8px;
+	background-color: #0AB1FC;
+	margin-bottom: 7px;
+}
+
+@media (max-width: 992px){
+	.header__container{
+		max-width: 768px;
+	}
+	.burger{
+		display: block;
+	}
+
+	.header__menu{
+		display: none;
+	}
+}
+
+@media (max-width: 768px){
+	.header__content{
+		justify-content: center;
+	}
+	.header__right{
+		display: none;
+	}
+	.header__title{
+		font-size: 33px;
+		text-align: center;
+	}
+
+	.header__text{
+		text-align: center;
+		font-size: 23px;
+	}
+}
+
+@media (max-width: 416px){
+	.header__logo{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
