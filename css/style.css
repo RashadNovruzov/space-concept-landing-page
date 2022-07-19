@@ -1,0 +1,34 @@
+/* reset styles */
+@import "normalize.css";
+@import "reset.css";
+
+/* Fonts family */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* General styles */
+*{
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	font-family: 'Nunito', sans-serif;
+}
+
+*[class*="__container"]{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main{
+	flex: 1 1 auto;
+}
+
+/*=========================== Blocks' styles ====================== */
